@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -29,14 +30,34 @@ export default function Home() {
           <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
         </div>
 
-        <div className="container relative mx-auto px-4 py-24 text-center text-white">
+        <div className="container relative mx-auto py-18 text-center text-white">
           {/* <div className="inline-block mb-6 px-4 py-2 bg-purple-500/20 backdrop-blur-sm border border-purple-400/30 rounded-full text-sm font-medium text-purple-200">
             ✨ Lanzamiento próximamente
           </div> */}
 
+          <div className="flex justify-center items-center mb-5">
+            <Image
+              src="/assets/logo10.png"
+              alt="Logo"
+              width={200}
+              height={200}
+              className="rounded-lg "
+            />
+          </div>
+
           <h1 className="text-6xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
             TocadApp
           </h1>
+
+          {/* <div className="flex justify-center items-center mb-5">
+            <Image
+              src="/assets/logo.png"
+              alt="Logo"
+              width={500}
+              height={500}
+              className="rounded-lg "
+            />
+          </div> */}
 
           <p className="text-2xl md:text-2xl mb-4 max-w-3xl mx-auto font-light">
             La plataforma que{" "}
@@ -262,15 +283,15 @@ export default function Home() {
       {/* Waitlist Section */}
       <section
         id="waitlist"
-        className="relative bg-gradient-to-br from-slate-900 to-slate-800 py-24 text-white"
+        className="relative bg-gradient-to-br from-slate-900 to-slate-800 py-10 text-white"
       >
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center pt-5">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-4xl font-extrabold mb-6">
+            <h2 className="text-4xl md:text-4xl font-extrabold mb-2">
               Sé de los primeros en probar TocadApp
             </h2>
 
-            <p className="text-emerald-300 text-lg mb-12 leading-relaxed">
+            <p className="text-emerald-300 text-md mb-6 leading-relaxed">
               Estamos desarrollando la plataforma. Déjanos tu email y te
               avisamos cuando esté lista.
             </p>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TocadApp - Gestión para Bandas Musicales",
+  title: "TocadApp",
   description:
     "Organiza tus tocadas y finanzas musicales. Gestiona contratos, calcula reparticiones y controla ingresos para tu banda.",
 };
